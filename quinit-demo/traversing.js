@@ -1,4 +1,4 @@
-console.profile();
+console.profile('traversing.js');
 module("traversing", { teardown: moduleTeardown });
 
 test("find(String)", function() {
@@ -639,5 +639,5 @@ test("eq('-1') #10616", function() {
 	equal( $divs.eq( -1 ).length, 1, "The number -1 returns a selection that has length 1" );
 	equal( $divs.eq( "-1" ).length, 1, "The string '-1' returns a selection that has length 1" );
 	deepEqual( $divs.eq( "-1" ), $divs.eq( -1 ), "String and number -1 match" );
-	console.profileEnd();
+	console.profileEnd('traversing.js');
 });
